@@ -1,0 +1,16 @@
+/* typography.css - font families, weights, line-height, letter-spacing and pseudo-elements */
+body { font-family: "Georgia", serif; margin:0; display:flex; min-height:100vh; flex-direction:column; }
+header, footer { text-align:center; padding:12px; background:#f8fafc; }
+.article { padding:28px; max-width:800px; margin:0 auto; }
+h2 { font-family: "Arial Black", Gadget, sans-serif; text-align:left; color:#111827; text-shadow: 0 1px 0 rgba(0,0,0,0.04); }
+p { line-height:1.65; letter-spacing:0.01em; font-size:1rem; color:#111827; }
+.light { font-weight:300; }
+.regular { font-weight:400; }
+.bold { font-weight:700; }
+mark { background:#fffbcc; color:#92400e; padding:0 4px; border-radius:3px; }
+strong { color:#0f172a; }
+em { color:#6b7280; font-style:normal; font-weight:600; }
+
+/* ::first-line and ::first-letter */
+.firstline::first-line { font-weight:700; letter-spacing:0.02em; }
+.firstletter::first-letter { font-size:2.2rem; font-weight:700; color:#be185d; margin-right:6px; float:left; line-height:1; }

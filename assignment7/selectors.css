@@ -1,0 +1,27 @@
+/* selectors.css - demonstrates attribute selectors, pseudo-classes, pseudo-elements and combinators */
+/* Attribute selector: selects inputs with type="text" */
+input[type="text"] { border:2px solid #94a3b8; padding:8px; margin:6px 0; display:block; }
+
+/* Attribute^=value selector: selects links starting with https */
+a[href^="https"] { font-weight:700; }
+
+/* pseudo-class :hover and :focus */
+a:hover { text-decoration:underline; }
+input:focus { outline:3px solid rgba(99,102,241,0.25); }
+
+/* nth-child example */
+.items li:nth-child(odd) { background:#f8fafc; padding:6px; }
+
+/* combinators: child (>) selects direct children */
+ul.links > li { display:inline-block; margin-right:12px; }
+
+/* adjacent sibling (+) select element immediately after */
+label + label { margin-left:12px; }
+
+/* general sibling (~) style all following siblings */
+.items li:first-child ~ li { font-style:italic; }
+
+/* pseudo-elements ::before and ::after */
+h1::after { content: " — demo"; font-size:0.8rem; color:#6b7280; margin-left:6px; }
+
+/* comments explain each selector type above */
