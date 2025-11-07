@@ -1,0 +1,9 @@
+/* Q7 UI Components */
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#f7fbfb,#eaf6f5);height:100vh;margin:0;display:flex;align-items:center;justify-content:center}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 12px 30px rgba(10,10,10,0.08);width:min(640px,96%);display:flex;flex-direction:column;gap:12px}
+.controls{display:flex;gap:10px;align-items:center}
+input[type="search"]{flex:1;padding:10px;border-radius:8px;border:1px solid #e6efee}
+input[type="search"]:focus{outline:3px solid rgba(43,122,120,0.16)}
+.btn{padding:9px 12px;border-radius:8px;background:#2b7a78;color:#fff;border:none;cursor:pointer}
+select{padding:9px;border-radius:8px;border:1px solid #e6efee}

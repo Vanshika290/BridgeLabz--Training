@@ -1,0 +1,19 @@
+/* Q4 - Selectors CSS */
+/* element selector styles all <p> elements */
+p{color:#222;line-height:1.5}
+/* class selector for highlight */
+.highlight{background:#fff3c4;padding:8px;border-radius:6px}
+/* ID selector for unique element */
+#unique{font-weight:700}
+/* attribute selector selects [data-info] */
+a[data-info]{text-decoration:underline dotted}
+/* descendant combinator: .outer p targets p inside .outer */
+.outer p{margin:6px 0;padding:6px}
+/* adjacent sibling combinator: h3 + p targets p immediately after h3 */
+h3 + p{font-style:italic}
+/* general sibling combinator: p ~ p targets all p siblings after first p */
+p ~ p{opacity:0.95}
+/* layout */
+body{font-family:Arial,Helvetica,sans-serif;margin:18px}
+header h1{margin-bottom:10px}
+footer{margin-top:12px;color:#666}

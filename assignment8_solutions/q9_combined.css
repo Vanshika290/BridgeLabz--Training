@@ -1,0 +1,7 @@
+/* Q9 Combined Effects */
+body{font-family:Arial,Helvetica,sans-serif;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;background:#fafafa}
+.examples{display:flex;gap:18px}
+.ex{padding:12px 16px;border-radius:10px;border:none;background:#2b7a78;color:#fff;cursor:pointer;box-shadow:0 8px 18px rgba(0,0,0,0.08);transition:transform .18s ease,box-shadow .18s ease,background .18s}
+.ex:hover{transform:scale(1.06);background:#1f615f;box-shadow:0 14px 30px rgba(0,0,0,0.12)}
+.ex:active{transform:scale(.98);}
+.ex:focus{outline:3px solid rgba(43,122,120,0.18);outline-offset:3px}

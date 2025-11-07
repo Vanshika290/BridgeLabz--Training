@@ -1,0 +1,9 @@
+/* Q8 Box-sizing */
+body{font-family:Arial,Helvetica,sans-serif;margin:20px}
+.wrap{max-width:900px;margin:0 auto;text-align:center}
+.compare{display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:18px}
+.box{width:300px;padding:24px;border:8px solid rgba(43,122,120,0.12);border-radius:8px;background:#fff}
+.box.default{box-sizing:content-box;background:#fff3f0}
+.box.border{box-sizing:border-box;background:#f0fff6}
+.explain{color:#555;margin-top:14px;max-width:700px;margin-left:auto;margin-right:auto}
+@media(max-width:640px){ .compare{flex-direction:column} }

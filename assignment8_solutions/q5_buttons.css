@@ -1,0 +1,11 @@
+/* Q5 Buttons */
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:20px;color:#222}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.btn{padding:10px 14px;border-radius:8px;border:1px solid transparent;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,0.06);transition:transform .12s ease,box-shadow .12s}
+.btn:focus{outline:3px solid rgba(43,122,120,0.18);outline-offset:3px}
+.btn:active{transform:translateY(1px) scale(.995)}
+.primary{background:#2b7a78;color:#fff}
+.secondary{background:#f3f6f6;color:#2b7a78}
+.outline{background:transparent;border:2px solid #2b7a78;color:#2b7a78}
+.btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}

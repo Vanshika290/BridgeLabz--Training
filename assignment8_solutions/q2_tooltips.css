@@ -1,0 +1,13 @@
+/* Q2 Tooltips CSS */
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fafafa;color:#222}
+.center{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px}
+.icons{display:flex;gap:28px;align-items:center;justify-content:center}
+.tip-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center}
+.icon,.word{display:inline-block;padding:12px;border-radius:50%;background:#fff;border:1px solid #e0e0e0;cursor:pointer;min-width:44px;text-align:center}
+.word{border-radius:6px;padding:8px 12px}
+.tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%) translateY(8px);white-space:nowrap;padding:8px 10px;border-radius:6px;background:#222;color:#fff;font-size:13px;opacity:0;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out;z-index:10}
+.tip-wrap:hover .tooltip,.tip-wrap:focus-within .tooltip{opacity:1;transform:translateX(-50%) translateY(-8px)}
+/* small arrow */
+.tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border-width:6px;border-style:solid;border-color:#222 transparent transparent transparent}
+@media(max-width:520px){ .icons{flex-direction:column} }

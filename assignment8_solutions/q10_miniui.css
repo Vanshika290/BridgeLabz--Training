@@ -1,0 +1,18 @@
+/* Q10 Mini UI */
+:root{--card:#fff;--accent:#2b7a78}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,#f7fbfb,#eef7f6);color:#222}
+.site-header{padding:16px 20px;text-align:center}
+.container{display:flex;justify-content:center;padding:24px}
+.card{display:flex;gap:18px;align-items:center;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 12px 30px rgba(10,10,10,0.06);max-width:760px;width:100%}
+form{flex:1;display:flex;flex-direction:column;gap:8px}
+input{padding:10px;border-radius:8px;border:1px solid #e6efee}
+input:focus{outline:3px solid rgba(43,122,120,0.16)}
+.row{display:flex;gap:10px;margin-top:8px}
+.btn{padding:9px 12px;border-radius:8px;border:none;cursor:pointer}
+.primary{background:var(--accent);color:#fff}
+.outline{background:transparent;border:1px solid #cfeae8;color:var(--accent)}
+.thumb{display:flex;flex-direction:column;align-items:center;gap:6px;margin:0}
+.thumb img{border-radius:8px}
+.site-footer{text-align:center;padding:14px;color:#666}
+@media(max-width:720px){ .card{flex-direction:column;align-items:stretch} }
